@@ -1,9 +1,10 @@
 # 1. Principe de l'appli : webservice
-Vous devez réaliser un Web Service en langage PHP qui permet de récupérer les informations d’un « adhérent » à partir de son « identifiant ». Les données (liste des adhérents) sont stockées dans un fichier CSV.
+Enoncé : "Vous devez réaliser un Web Service en langage PHP qui permet de récupérer les informations d’un « adhérent » à partir de son « identifiant ». Les données (liste des adhérents) sont stockées dans un fichier CSV."
 
 # 2. choix  du framework et des composants
-Symfony 4.1 : j'aime symfony et je n'avais pas testé la V4
-choix d'une API REST : plus lisible que SOAP
+* Symfony 4.1 : j'aime symfony et je n'avais pas testé la V4
+* choix d'une API REST : plus lisible que SOAP
+
 MVC : 
 * model : src/Entity/Userlabels.php
 * vue : une homepage index.html.twig et gestion custom des 404 : templates\bundles\TwigBundle\Exception\error404.html.twig
