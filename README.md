@@ -18,12 +18,16 @@ MVC :
 ## 4.1 installation avec .zip (demandé dans les specifications): 
 * copier le fichier AJE.zip fourni dans le mail à la racine www de votre serveur apache
 * décompresser ce fichier (choisir "extraire ici") et supprimer l'archive AJE.zip
+* tester http://localhost dans votre navigateur
 
 ## 4.2. installation alternative avec git et composer : 
 si vous avez un probleme avec le .zip : dans votre répertoire www :
 * git clone https://github.com/joulie/demo1.git .  (// ne pas oublier le "." à la fin)
 * php composer.phar install
-* (Cas 2 : eventuellement si problème avec le .htaccess : php -S 127.0.0.1:8000 -t public)
+* tester http://localhost dans votre navigateur
+### 4.2.1 : eventuellement si http://loclahost ne répond pas 
+* à la racine du répertoire d'installation taper : php -S 127.0.0.1:8000 -t public)
+* et aller sur http://localhost:8000
 
 # 5. éléments réalisés : 
 * une homepage qui liste les actions possibles via l'URL http://localhost/
@@ -56,5 +60,6 @@ ou sommes nous dans le cadre d'un ESB qui a un format fixe de réception
 
 # 8. Propositions
 * authentification avec token
-* vérification des en-tetes de colonne avec message spécifique
+* vérification des en-tetes de colonne avec message spécifique si en-tête inadaptée
 * vérification si toute une ligne est vide
+* utiliser une base de données pour traiter l'information de manière orientée objet : à la lecture insertion en base et à la restitution re-transformation en tableau. cette méthode n'a pas d'intérêt sur l'exemple présent cependant dans le cadre d'une exploitation plus poussée ce serait plus simple, et permettrai une historisation
