@@ -14,12 +14,13 @@ MVC :
 * apache2
 * php 7.1
 
-# 4.1. installation avec .zip (demandé dans les specifications): 
+# 4 installation
+## 4.1 installation avec .zip (demandé dans les specifications): 
 * copier le fichier AJE.zip fourni dans le mail à la racine www de votre serveur apache
 * décompresser ce fichier (choisir "extraire ici") et supprimer l'archive AJE.zip
 
-# 4.2. installation via http : 
-dans votre répertoire www :
+## 4.2. installation alternative avec git et composer : 
+si vous avez un probleme avec le .zip : dans votre répertoire www :
 * git clone https://github.com/joulie/demo1.git .  (// ne pas oublier le "." à la fin)
 * php composer.phar install
 * (Cas 2 : eventuellement si problème avec le .htaccess : php -S 127.0.0.1:8000 -t public)
