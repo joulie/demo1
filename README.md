@@ -20,7 +20,7 @@ MVC :
 
 # 4.2. installation via http : 
 dans votre répertoire www :
-* git clone https://github.com/joulie/demo1.git .
+* git clone https://github.com/joulie/demo1.git .  (// ne pas oublier le "." à la fin)
 * php composer.phar install
 * (Cas 2 : eventuellement si problème avec le .htaccess : php -S 127.0.0.1:8000 -t public)
 
