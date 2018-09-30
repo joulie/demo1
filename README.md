@@ -41,7 +41,7 @@ si vous avez un probleme avec le .zip : dans votre répertoire www :
 
 ``` test 2.1 via http://localhost/test2 ```
 
-``` test 2.2 avec un fichier .csv vide  (hébergé ici dans hardis\public\donnees.csv) ```
+``` test 2.2 avec un fichier .csv vide  (hébergé ici dans public\donnees.csv) ```
 
 ``` test 2.3 en supprimant le fichier.csv ```
 
