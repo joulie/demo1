@@ -25,8 +25,8 @@ dans votre répertoire www :
 
 # 5. éléments réalisés : 
 * une homepage qui liste les actions possibles via l'URL http://localhost/
-* vous trouverez les résultats du test1 via l'URL http://localhost//test1 : test1.1 via http://localhost//test1/{id existant} - test1.2 via http://localhost//test1/{id inexistant} 
-* vous trouverez les résultats du test2 via l'URL http://localhost//test2 : test 2.1 via http://localhost//test2 - test 2.2 avec un fichier .csv vide (hébergé ici dans hardis\public\donnees.csv - test 2.3 en supprimant le fichier.csv
+* vous trouverez les résultats du test1 via l'URL http://localhost/test1 : test1.1 via http://localhost/test1/{id existant} - test1.2 via http://localhost/test1/{id inexistant} 
+* vous trouverez les résultats du test2 via l'URL http://localhost/test2 : test 2.1 via http://localhost/test2 - test 2.2 avec un fichier .csv vide (hébergé ici dans hardis\public\donnees.csv - test 2.3 en supprimant le fichier.csv
 
 # 6. améliorations non réalisées faute de temps :
 passer les routes en annotation
