@@ -29,6 +29,6 @@ gérer une mise en page html pour les éléments non Json
 une icone 
 
 éléments réalisés : 
-* une homepage qui liste les actions possibles : 
+* une homepage qui liste les actions possibles via l'URL /
 * vous trouverez les résultats du test1 via l'URL /test1 : test1.1 via /test1/{id existant} - test1.2 via /test1/{id inexistant} 
 * vous trouverez les résultats du test2 via l'URL /test2 : test 2.1 via /test2 - test 2.2 avec un fichier .csv vide (hébergé ici dans hardis\public\donnees.csv - test 2.3 en supprimant le fichier.csv
