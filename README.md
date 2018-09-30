@@ -7,7 +7,7 @@ Enoncé : "Vous devez réaliser un Web Service en langage PHP qui permet de réc
 
 MVC : 
 * model : src/Entity/Userlabels.php
-* vue : une homepage index.html.twig et gestion custom des 404 : templates\bundles\TwigBundle\Exception\error404.html.twig
+* vue : une homepage templates\index.html.twig et gestion custom des 404 : templates\bundles\TwigBundle\Exception\error404.html.twig
 * Controller : src/Controller/CsvController.php
 
 # 3. pré-requis 
