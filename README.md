@@ -2,7 +2,7 @@
 Vous devez réaliser un Web Service en langage PHP qui permet de récupérer les informations d’un « adhérent » à partir de son « identifiant ». Les données (liste des adhérents) sont stockées dans un fichier CSV.
 
 # choix  du framework et des composants
-SF4.1 : j'aime symfony et je n'avais pas testé la V4
+Symfony 4.1 : j'aime symfony et je n'avais pas testé la V4
 choix d'une API REST : plus lisible que SOAP
 MVC : 
 * model : src/Entity/Userlabels.php
