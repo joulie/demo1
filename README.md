@@ -16,7 +16,7 @@ MVC :
 
 # 4.1. installation avec .zip (demandé dans les specifications): 
 * copier le fichier AJE.zip fourni dans le mail à la racine www de votre serveur apache
-* décompresser ce fichier et supprimer l'archive AJE.zip
+* décompresser ce fichier (choisir "extraire ici") et supprimer l'archive AJE.zip
 
 # 4.2. installation via http : 
 dans votre répertoire www :
