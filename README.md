@@ -29,9 +29,9 @@ dans votre répertoire www :
 * vous trouverez les résultats du test2 via l'URL http://localhost/test2 : test 2.1 via http://localhost/test2 - test 2.2 avec un fichier .csv vide (hébergé ici dans hardis\public\donnees.csv - test 2.3 en supprimant le fichier.csv
 
 # 6. améliorations non réalisées faute de temps :
-passer les routes en annotation
-gérer une mise en page html pour les éléments non Json
-une icone 
+* passer les routes et paramètres en annotation
+* gérer une mise en page html pour les éléments non Json
+* une icone 
 
 # 7. réponses au document : partie 2 – Réflexion
 * les choix de conception ont été princiapelement orientés sur le temps imparti et le manque d'information sur l'utilisation de ce webservice
