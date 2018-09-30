@@ -13,18 +13,19 @@ class CsvController extends Controller
     // afin de respecter la spécification MVC du test une page d'accueil permettra de faire une vue, comme le reste des demandes est du webservice => json
     public function index()
     {
-        $adherents = $this->getAdherents();
-        return $this->customJsonEnconding($adherents);
+         return $this->render('index.html.twig');
     }
 
     // pour la route test1 : si pas de paramètre dans la request_uri lister tous les comptes
     // si un paramètre est passé on renvoie les détail d'un user ou un message "Aucun adhérent ne correspond à votre demande"
     public function getAdherentById($id)
     {
+        // pas de paramètre passé dans l'URL => resultat total
         if ($id == -1){
             $adherents = $this->getAdherents();
             return $this->customJsonEnconding($adherents);
-        } else {
+        } else { //un paramètre a été passé dans l'URL
+            // récupération du tableau correspondant à la lecture du fichier .csv
             $adherents = $this->getAdherents();
             // vérification que l'identifiant est présent dans les données ; sinon $returnkey sera not set et ça nous permettra de renvoyer un message spécifique
             $i=0;
@@ -43,11 +44,13 @@ class CsvController extends Controller
 
     //  pour la route /test2
     public function getAllAdherentWithCountSorted() {
+        // récupération du tableau correspondant à la lecture du fichier .csv
         $adherents = $this->getAdherents();
+        // si le fichier csv est rempli on renvoie ces résultats sous forme json
         if (isset($adherents)) {
             $this->sortAdherents($adherents);
             return $this->customJsonEnconding($adherents, $yesGiveCount = true);
-        } else {
+        } else { // si le fichier csv est vide on renvoie un message spécifique
             return $this->customJsonEnconding("Aucun adhérent n’est présent");
         }
     }
@@ -63,6 +66,7 @@ class CsvController extends Controller
                 // une lecture de la première ligne du fichier permet de fixer les en-tetes de colonne, dans le cadre d'un projet international par exemple
                 if ($data !== FALSE) {
                     $num = count($data); // Nombre d'éléments sur la ligne traitée
+                    // l'utilisation d'une entité pour ce cas est uniquement dans le cadre du test pour respeceter le modele MVC mais n'est pas le fruit d'un choix technique
                     $userLabels = new UserLabels();
                     $userLabels->setId($data[0]);
                     $userLabels->setLastName($data[1]);
@@ -118,9 +122,10 @@ class CsvController extends Controller
         return array_multisort($nom, SORT_ASC, $adherents);
     }
 
-    // pour bypasser un probleme d'encodage sur la fonction SF4 JsonResponse spécifique aux tableaux,
-    // on passe par une fonction custom appelant une méthode php classique qui répond à nos besoin
-    // cette fonction doit etre appelée aussi bien par un controller sans compte sur les élements qu'avec compte => param $withcount optionnel
+    /* pour bypasser un probleme d'encodage sur la fonction Symfony4 JsonResponse spécifique aux tableaux,
+      on passe par une fonction custom appelant une méthode php classique qui répond à nos besoin
+      cette fonction doit etre appelée aussi bien par un controller sans compte sur les élements qu'avec compte => param $withcount optionnel
+    */
     private function customJsonEnconding($returnArray, $withCount = null) {
         $response = new Response(json_encode(isset($withCount) ? array('numberOfAdeherents' => sizeof($returnArray))+$returnArray : $returnArray, JSON_UNESCAPED_UNICODE));
         $response->headers->set('Content-Type', 'application/json');

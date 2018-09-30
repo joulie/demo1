@@ -1,5 +1,5 @@
 <?php
-// src/Entity/UserLabels.php : récupération identifiant;nom;prenom;telephone dans le cadre d'une utilisation internationale
+// src/Entity/UserLabels.php : récupération identifiant;nom;prenom;telephone dans le but d'utiliser une entité dans le test, sans avoir le temps de réfléchir à son utilité
 
 namespace App\Entity;
 
