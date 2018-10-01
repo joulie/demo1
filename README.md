@@ -63,4 +63,5 @@ ou sommes nous dans le cadre d'un ESB qui a un format fixe de réception
 * authentification avec token
 * vérification des en-tetes de colonne avec message spécifique si en-tête inadaptée
 * vérification si toute une ligne est vide
-* utiliser une base de données pour traiter l'information de manière orientée objet : à la lecture insertion en base et à la restitution re-transformation en tableau. cette méthode n'a pas d'intérêt sur l'exemple présent cependant dans le cadre d'une exploitation plus poussée ce serait plus simple, et permettrai une historisation
+* utiliser une base de données pour traiter l'information de manière orientée objet : à la lecture insertion en base et à la restitution re-transformation en tableau. cette méthode n'a pas d'intérêt sur l'exemple présent 
+cependant dans le cadre d'une exploitation plus poussée ce serait plus simple, et permettrait une historisation
