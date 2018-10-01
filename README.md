@@ -25,7 +25,7 @@ si vous avez un probleme avec le .zip : dans votre répertoire www :
 * git clone https://github.com/joulie/demo1.git .  (// ne pas oublier le "." à la fin)
 * php composer.phar install
 * tester http://localhost dans votre navigateur
-### 4.2.1 : eventuellement si http://loclahost ne répond pas 
+### 4.2.1 : eventuellement si http://localhost ne répond pas 
 * à la racine du répertoire d'installation taper : php -S 127.0.0.1:8000 -t public
 * et aller sur http://localhost:8000
 
