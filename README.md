@@ -51,7 +51,8 @@ si vous avez un probleme avec le .zip : dans votre répertoire www :
 * une icone 
 
 # 7. réponses au document : partie 2 – Réflexion
-* les choix de conception ont été princiapelement orientés sur le temps imparti et le manque d'information sur l'utilisation de ce webservice
+* les choix de conception ont été principalement orientés sur le temps 
+imparti et le manque d'information sur l'utilisation de ce webservice
 par exemple est-ce que les noms des colonnes sont fixes, est-ce que ça doit servir dans un contexte international, est-ce que l'utisateur peut augmenter le nombre de colonnes 
 ou sommes nous dans le cadre d'un ESB qui a un format fixe de réception
 * la gestion des erreurs a été orientée temps imparti / réponse au besoin, sans prendre en compte des bonne pratiques comme une mise en page des 404, seul le texte brut est renvoyé
